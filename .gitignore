@@ -1,0 +1,21 @@
+# --- System & IDE Settings ---
+.idea/
+.vscode/
+__pycache__/
+
+# --- Large Folders (Dependencies) ---
+IntelliJ IDEA Community Edition 2025.2.5/
+java-21/
+rlmc_server/
+venv/
+
+# --- Binary & Installer Files ---
+*.exe
+*.zip
+*.jar
+
+# --- AI Data (Crucial) ---
+# Ignore the brain files so you don't upload 50MB binaries every commit
+*.pth
+# Keep the models folder structure, but ignore files inside if you want
+# !models/final_brain.pth  <-- Uncomment if you specifically WANT to track a specific brain
