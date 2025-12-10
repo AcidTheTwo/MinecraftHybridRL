@@ -1,0 +1,44 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.13.5",
+  "startedAt":  "2025-12-10T19:58:31.785344Z",
+  "args":  [
+    "--model",
+    "navigator"
+  ],
+  "program":  "d:\\RLMC\\src\\main_brain.py",
+  "codePath":  "src\\main_brain.py",
+  "codePathLocal":  "main_brain.py",
+  "git":  {
+    "remote":  "https://github.com/AcidTheTwo/MinecraftHybridRL.git",
+    "commit":  "f7f61121abffa1e7e2ab24b77b5c50f1ac4fc69f"
+  },
+  "email":  "acidmc69@gmail.com",
+  "root":  "d:\\RLMC\\src",
+  "host":  "LAPTOP-I19HFFDE",
+  "executable":  "D:\\RLMC\\venv\\Scripts\\python.exe",
+  "cpu_count":  8,
+  "cpu_count_logical":  16,
+  "gpu":  "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "268434403328",
+      "used":  "168466452480"
+    }
+  },
+  "memory":  {
+    "total":  "25439199232"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA GeForce RTX 4050 Laptop GPU",
+      "memoryTotal":  "6439305216",
+      "cudaCores":  2560,
+      "architecture":  "Ada",
+      "uuid":  "GPU-b4444b37-7e75-1d59-b9c7-58edc1c6fbd1"
+    }
+  ],
+  "cudaVersion":  "13.0",
+  "writerId":  "lhabf69yg4mc7dv01231svxblcl4srna"
+}

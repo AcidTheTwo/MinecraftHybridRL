@@ -1,0 +1,49 @@
+2025-12-11 00:56:02,370 INFO    MainThread:21624 [wandb_setup.py:_flush():80] Current SDK version is 0.23.1
+2025-12-11 00:56:02,370 INFO    MainThread:21624 [wandb_setup.py:_flush():80] Configure stats pid to 21624
+2025-12-11 00:56:02,370 INFO    MainThread:21624 [wandb_setup.py:_flush():80] Loading settings from C:\Users\acidm\.config\wandb\settings
+2025-12-11 00:56:02,370 INFO    MainThread:21624 [wandb_setup.py:_flush():80] Loading settings from D:\RLMC\src\wandb\settings
+2025-12-11 00:56:02,370 INFO    MainThread:21624 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-12-11 00:56:02,371 INFO    MainThread:21624 [wandb_init.py:setup_run_log_directory():714] Logging user logs to D:\RLMC\src\wandb\run-20251211_005602-khit0y6o\logs\debug.log
+2025-12-11 00:56:02,372 INFO    MainThread:21624 [wandb_init.py:setup_run_log_directory():715] Logging internal logs to D:\RLMC\src\wandb\run-20251211_005602-khit0y6o\logs\debug-internal.log
+2025-12-11 00:56:02,372 INFO    MainThread:21624 [wandb_init.py:init():841] calling init triggers
+2025-12-11 00:56:02,372 INFO    MainThread:21624 [wandb_init.py:init():846] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.001, 'gamma': 0.9, 'batch_size': 32, 'architecture': 'DQN', 'task': 'navigator', 'input_size': 35, 'action_space': 8, '_wandb': {}}
+2025-12-11 00:56:02,372 INFO    MainThread:21624 [wandb_init.py:init():889] starting backend
+2025-12-11 00:56:05,075 INFO    MainThread:21624 [wandb_init.py:init():892] sending inform_init request
+2025-12-11 00:56:05,137 INFO    MainThread:21624 [wandb_init.py:init():900] backend started and connected
+2025-12-11 00:56:05,229 INFO    MainThread:21624 [wandb_init.py:init():970] updated telemetry
+2025-12-11 00:56:05,297 INFO    MainThread:21624 [wandb_init.py:init():994] communicating run to backend with 90.0 second timeout
+2025-12-11 00:56:07,203 INFO    MainThread:21624 [wandb_init.py:init():1041] starting run threads in backend
+2025-12-11 00:56:08,012 INFO    MainThread:21624 [wandb_run.py:_console_start():2521] atexit reg
+2025-12-11 00:56:08,012 INFO    MainThread:21624 [wandb_run.py:_redirect():2369] redirect: wrap_raw
+2025-12-11 00:56:08,013 INFO    MainThread:21624 [wandb_run.py:_redirect():2438] Wrapping output streams.
+2025-12-11 00:56:08,013 INFO    MainThread:21624 [wandb_run.py:_redirect():2461] Redirects installed.
+2025-12-11 00:56:08,022 INFO    MainThread:21624 [wandb_init.py:init():1081] run started, returning control to user process
+2025-12-11 01:25:46,318 ERROR   wandb-AsyncioManager-main:21624 [service_client.py:_forward_responses():77] Error reading server response.
+Traceback (most recent call last):
+  File "C:\Users\acidm\.pyenv\pyenv-win\versions\3.13.5\Lib\asyncio\windows_events.py", line 463, in finish_socket_func
+    return ov.getresult()
+           ~~~~~~~~~~~~^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\RLMC\venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 73, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\RLMC\venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 87, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\acidm\.pyenv\pyenv-win\versions\3.13.5\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Users\acidm\.pyenv\pyenv-win\versions\3.13.5\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Users\acidm\.pyenv\pyenv-win\versions\3.13.5\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\Users\acidm\.pyenv\pyenv-win\versions\3.13.5\Lib\asyncio\windows_events.py", line 804, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Users\acidm\.pyenv\pyenv-win\versions\3.13.5\Lib\asyncio\windows_events.py", line 467, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2025-12-11 01:25:46,416 INFO    wandb-AsyncioManager-main:21624 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.

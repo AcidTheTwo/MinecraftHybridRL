@@ -4,6 +4,12 @@ import pickle
 import time
 import sensors   # Your sensor module
 import actuators # Your actuator module
+import sys
+import os
+
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+sys.path.append(project_root)
+
 from src.common.config import HOST, PORT
 
 import minescript
@@ -65,3 +71,5 @@ def run():
         except Exception as e:
             minescript.echo(f"⚠️ Error: {e}")
             time.sleep(3)
+            
+run()

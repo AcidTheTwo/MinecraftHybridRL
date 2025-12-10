@@ -23,7 +23,7 @@ def load_objective_module(model_name):
         return {
             "class": getattr(module, 'Objective'),
             "actions": getattr(module, 'ACTIONS'),
-            "input": getattr(module, 'INPUTS', []) # Config is optional, defaults empty
+            "config": getattr(module, 'INPUT_CONFIG', {}) # Config is optional, defaults empty
         }
 
     except (ImportError, AttributeError) as e:

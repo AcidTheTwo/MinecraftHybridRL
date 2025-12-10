@@ -1,0 +1,42 @@
+🚀 Listening on port 65432...
+🔗 Connected: ('127.0.0.1', 64727)
+📤 Sent Config: navigator (Waiting for Client...)
+🔗 Connected: ('127.0.0.1', 64728)
+📤 Sent Config: navigator (Waiting for Client...)
+🔗 Connected: ('127.0.0.1', 64729)
+📤 Sent Config: navigator (Waiting for Client...)
+🔗 Connected: ('127.0.0.1', 64730)
+📤 Sent Config: navigator (Waiting for Client...)
+🔗 Connected: ('127.0.0.1', 64779)
+📤 Sent Config: navigator (Waiting for Client...)
+🔗 Connected: ('127.0.0.1', 64781)
+📤 Sent Config: navigator (Waiting for Client...)
+🔗 Connected: ('127.0.0.1', 64919)
+📤 Sent Config: navigator (Waiting for Client...)
+Step 0 | Rw: -6697.206 | Conf: 0.04 | AI
+Step 10 | Rw: -0.072 | Conf: 0.00 | RND
+Step 20 | Rw: -8.151 | Conf: 0.07 | AI
+Step 30 | Rw: -9.158 | Conf: 0.00 | RND
+Step 40 | Rw: -0.050 | Conf: 0.00 | RND
+Step 50 | Rw: -0.050 | Conf: 0.00 | RND
+Step 60 | Rw: -32.061 | Conf: 1.86 | AI
+Step 70 | Rw: 33.467 | Conf: 2.44 | AI
+Step 80 | Rw: -0.157 | Conf: 0.00 | RND
+⚠️  Client Disconnected: [WinError 10054] An existing connection was forcibly closed by the remote host
+💾 Brain saved to data/checkpoints/brain_navigator.pth
+🔗 Connected: ('127.0.0.1', 64943)
+📤 Sent Config: navigator (Waiting for Client...)
+Step 90 | Rw: -65.586 | Conf: 5.88 | AI
+Step 100 | Rw: 7.054 | Conf: 14.47 | AI
+Step 110 | Rw: 0.034 | Conf: 28.08 | AI
+Step 120 | Rw: -16.442 | Conf: 46.45 | AI
+Step 130 | Rw: -33.372 | Conf: 70.27 | AI
+Step 140 | Rw: -44.087 | Conf: 119.19 | AI
+Step 150 | Rw: -51.241 | Conf: 0.00 | RND
+Step 160 | Rw: -0.193 | Conf: 215.46 | AI
+Step 170 | Rw: -5.203 | Conf: 0.00 | RND
+Step 180 | Rw: 62.496 | Conf: 306.40 | AI
+Step 190 | Rw: 19.901 | Conf: 0.00 | RND
+Step 200 | Rw: 53.758 | Conf: 410.08 | AI
+⚠️  Client Disconnected: [WinError 10054] An existing connection was forcibly closed by the remote host
+💾 Brain saved to data/checkpoints/brain_navigator.pth

@@ -20,3 +20,6 @@ MinecraftHRLNotes/
 *.pth
 # Keep the models folder structure, but ignore files inside if you want
 # !models/final_brain.pth  <-- Uncomment if you specifically WANT to track a specific brain
+
+agent.py
+brain_server.py

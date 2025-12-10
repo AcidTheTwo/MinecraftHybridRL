@@ -1,0 +1,35 @@
+🚀 Listening on port 65432...
+💡 Press Ctrl+C to Save and Exit at any time.
+🔗 Connected: ('127.0.0.1', 65099)
+Step 0 | Rw: 0.000 | Conf: 0.09 | AI
+Step 10 | Rw: 0.000 | Conf: 0.07 | AI
+Step 20 | Rw: 0.000 | Conf: 0.07 | AI
+Step 30 | Rw: 0.000 | Conf: 0.08 | AI
+Step 40 | Rw: 0.000 | Conf: 0.07 | AI
+Step 50 | Rw: 0.000 | Conf: 0.07 | AI
+Step 60 | Rw: 0.000 | Conf: 0.06 | AI
+Step 70 | Rw: 0.000 | Conf: 0.00 | RND
+Step 80 | Rw: 0.000 | Conf: 0.06 | AI
+Step 90 | Rw: 0.000 | Conf: 0.06 | AI
+⚠️  Client Disconnected: [WinError 10054] An existing connection was forcibly closed by the remote host
+🔗 Connected: ('127.0.0.1', 65135)
+Step 100 | Rw: 0.000 | Conf: 0.06 | AI
+Step 110 | Rw: 0.000 | Conf: 0.06 | AI
+Step 120 | Rw: 0.000 | Conf: 0.06 | AI
+Step 130 | Rw: 0.000 | Conf: 0.00 | RND
+Step 140 | Rw: 0.000 | Conf: 0.00 | RND
+Step 150 | Rw: 0.000 | Conf: 0.00 | RND
+Step 160 | Rw: 0.000 | Conf: 0.00 | RND
+Step 170 | Rw: 0.000 | Conf: 0.07 | AI
+Step 180 | Rw: 0.000 | Conf: 0.07 | AI
+Step 190 | Rw: 0.000 | Conf: 0.00 | RND
+Step 200 | Rw: 0.000 | Conf: 0.06 | AI
+Step 210 | Rw: 0.000 | Conf: 0.00 | RND
+⚠️  Client Disconnected: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+
+🛑 MANUAL INTERRUPT DETECTED (Ctrl+C)
+💾 Saving Brain State...
+💾 Brain saved to data/checkpoints/brain_navigator.pth
+✅ Model saved to data/checkpoints/brain_navigator.pth
+👋 Exiting gracefully.

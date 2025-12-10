@@ -1,0 +1,100 @@
+Level 1 Models:
+1. The Navigator (Locomotion)
+
+    Role: The "Legs."
+
+    Goal: Move from coordinate (x1​,y1​,z1​) to (x2​,y2​,z2​) safely.
+
+    Input: Relative target vector, local voxel grid (3x3x3), velocity.
+
+    Output: FORWARD, BACKWARD, LEFT, RIGHT, JUMP, SPRINT, SNEAK.
+
+    Why: Pathfinding algorithms (A*) generate a list of points; this model executes the movement between those points (e.g., jumping a gap, swimming).
+
+2. The Gazer (Orientation)
+
+    Role: The "Neck."
+
+    Goal: Align the player's crosshair (yaw/pitch) with a specific 3D coordinate or Entity ID.
+
+    Input: Target delta (yaw/pitch errors), target velocity (if tracking moving object).
+
+    Output: TURN_LEFT, TURN_RIGHT, LOOK_UP, LOOK_DOWN (continuous/fine adjustments).
+
+    Why: Separates "where I look" from "where I walk." Crucial for strafing (looking at enemy while moving left).
+
+3. The Gladiator (Combat - Melee)
+
+    Role: The "Reflexes."
+
+    Goal: Defeat a hostile entity in close quarters (within 4 blocks) while minimizing damage taken.
+
+    Input: Enemy distance, enemy attack state (charging?), my cooldown, my shield state.
+
+    Output: ATTACK, USE (Shield), JUMP (Critical Hit), BACKWARD (Kiting).
+
+    Why: Combat requires micro-timing (shield blocking, crit spamming) that a high-level planner is too slow to handle.
+
+4. The Archer (Combat - Ranged)
+
+    Role: The "Sniper."
+
+    Goal: Hit a target with a projectile (Bow/Crossbow/Trident).
+
+    Input: Target distance, target velocity, gravity constant (arrow drop).
+
+    Output: USE (Hold to charge), RELEASE, LOOK_UP (Compensate for arc).
+
+    Why: Projectile physics are different from melee. This model learns "aim higher when target is far."
+
+5. The Excavator (Mining)
+
+    Role: The "Hands."
+
+    Goal: Break a specific block at (x,y,z) efficiently.
+
+    Input: Block hardness, current tool efficiency, break progress (0-100%).
+
+    Output: ATTACK (Hold), FORWARD (Micro-adjust to stay in reach).
+
+    Why: Prevents the bot from clicking randomly. It learns to hold the button until the block breaks and stop immediately after to save durability.
+
+6. The Builder (Placement)
+
+    Role: The "Precision."
+
+    Goal: Place a specific block on a specific face of a target block (e.g., "Place torch on top of fence").
+
+    Input: Target surface normal, distance, bounding box clearance.
+
+    Output: USE, SNEAK (to prevent opening containers), LOOK_* (fine adjustment).
+
+    Why: Placing blocks while jumping (towering) or placing on edges (bridging) requires precise timing that is hard to hard-code.
+
+7. The Swimmer (Aquatic)
+
+    Role: The "Fins."
+
+    Goal: 3D movement underwater.
+
+    Input: Oxygen level, buoyancy, 3D target vector.
+
+    Output: SPRINT (swim fast), JUMP (ascend), SNEAK (descend).
+
+    Why: Movement physics change completely in water (drag, verticality). The Navigator model will likely fail here, so a specialized model is needed.
+
+8. The Parker (Parkour - Optional/Advanced)
+
+    Role: The "Agility."
+
+    Goal: Complete complex jumps (Neo-jumps, 4-block jumps).
+
+    Input: Gap distance, landing pad size, current momentum.
+
+    Output: Precise SPRINT + JUMP timing.
+
+    Why: Only needed if you plan to traverse very rugged terrain or caves without placing blocks.
+
+
+
+
